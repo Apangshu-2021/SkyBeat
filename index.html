@@ -27,76 +27,76 @@
 
     <div class="container">
       <div class="songList">
-        <h1>Top 10 songs of my playlist</h1>
+        <h1>Songs from my playlist</h1>
         <div class="songItemContainer">
           <div class="songItem">
             <img src="covers/1.jpeg" alt="1" />
             <span class="songName">Meant to live-Switchfoot</span>
             <div class="songlistplay">
-              5:54<i id="1" class="far songItemPlay fa-play-circle"></i>
+              <i id="1" class="far songItemPlay fa-play-circle"></i>
             </div>
           </div>
           <div class="songItem">
             <img src="covers/1.jpeg" alt="2" />
             <span class="songName">Numb-Linkin Park</span>
             <div class="songlistplay">
-              5:54<i id="2" class="far songItemPlay fa-play-circle"></i>
+              <i id="2" class="far songItemPlay fa-play-circle"></i>
             </div>
           </div>
           <div class="songItem">
             <img src="covers/1.jpeg" alt="3" />
             <span class="songName">In the End-Linkin Park</span>
             <div class="songlistplay">
-              5:54<i id="3" class="far songItemPlay fa-play-circle"></i>
+              <i id="3" class="far songItemPlay fa-play-circle"></i>
             </div>
           </div>
           <div class="songItem">
             <img src="covers/1.jpeg" alt="4" />
             <span class="songName">New Divide-Linkin Park</span>
             <div class="songlistplay">
-              5:54<i id="4" class="far songItemPlay fa-play-circle"></i>
+              <i id="4" class="far songItemPlay fa-play-circle"></i>
             </div>
           </div>
           <div class="songItem">
             <img src="covers/1.jpeg" alt="5" />
             <span class="songName">Burn It Down-Linkin Park</span>
             <div class="songlistplay">
-              5:54<i id="5" class="far songItemPlay fa-play-circle"></i>
+              <i id="5" class="far songItemPlay fa-play-circle"></i>
             </div>
           </div>
           <div class="songItem">
             <img src="covers/1.jpeg" alt="6" />
             <span class="songName">Leave Out All The Rest-Linkin Park</span>
             <div class="songlistplay">
-              5:54<i id="6" class="far songItemPlay fa-play-circle"></i>
+              <i id="6" class="far songItemPlay fa-play-circle"></i>
             </div>
           </div>
           <div class="songItem">
             <img src="covers/1.jpeg" alt="7" />
             <span class="songName">Easier To Run-Linkin Park</span>
             <div class="songlistplay">
-              5:54<i id="7" class="far songItemPlay fa-play-circle"></i>
+              <i id="7" class="far songItemPlay fa-play-circle"></i>
             </div>
           </div>
           <div class="songItem">
             <img src="covers/1.jpeg" alt="8" />
             <span class="songName">Hall Of Fame-Will.I.Am,The Script</span>
             <div class="songlistplay">
-              5:54<i id="8" class="far songItemPlay fa-play-circle"></i>
+              <i id="8" class="far songItemPlay fa-play-circle"></i>
             </div>
           </div>
           <div class="songItem">
             <img src="covers/1.jpeg" alt="9" />
             <span class="songName">Centuries-Fall Out Boy</span>
             <div class="songlistplay">
-              5:54<i id="9" class="far songItemPlay fa-play-circle"></i>
+              <i id="9" class="far songItemPlay fa-play-circle"></i>
             </div>
           </div>
           <div class="songItem">
             <img src="covers/1.jpeg" alt="10" />
             <span class="songName">Fireflies-Owl City</span>
             <div class="songlistplay">
-              5:54<i id="10" class="far songItemPlay fa-play-circle"></i>
+              <i id="10" class="far songItemPlay fa-play-circle"></i>
             </div>
           </div>
         </div>
@@ -105,14 +105,22 @@
     </div>
 
     <div class="bottom">
-      <input
-        type="range"
-        name="range"
-        id="myProgressBar"
-        value="0"
-        min="{0}"
-        max="{100}"
-      />
+      <div id="progress_container">
+        <div class="progress_duration_meter">
+          <div id="current_time">0:00</div>
+          <div id="total_time">3:20</div>
+        </div>
+        <div>
+          <input
+            type="range"
+            name="range"
+            id="myProgressBar"
+            value="0"
+            min="{0}"
+            max="{100}"
+          />
+        </div>
+      </div>
       <div class="songInfo">
         <img src="playing.gif" width="42px" alt="" id="gif" />
         <span id="masterSongName">Meant To Live-Switchfoot</span>

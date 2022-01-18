@@ -10,6 +10,8 @@ let songItemPlay = Array.from(document.getElementsByClassName('songItemPlay'))
 let previous = document.getElementById('previous')
 let next = document.getElementById('next')
 let masterSongName = document.getElementById('masterSongName')
+let current_time = document.getElementById('current_time')
+let total_time = document.getElementById('total_time')
 
 let songs = [
   {
@@ -99,8 +101,33 @@ audioElement.addEventListener('timeupdate', () => {
   let progress = parseInt(
     (audioElement.currentTime / audioElement.duration) * 100
   )
-
   myProgressBar.value = progress
+
+  //music duration update
+
+  //current_time update
+
+  let current_min_duration = Math.floor(audioElement.currentTime / 60)
+  let current_sec_duration = Math.floor(audioElement.currentTime % 60)
+
+  current_sec_duration =
+    current_sec_duration < 10
+      ? `0${current_sec_duration}`
+      : current_sec_duration
+
+  current_time.innerText = `${current_min_duration}:${current_sec_duration}`
+
+  //total_time update
+  let total_min_duration = Math.floor(audioElement.duration / 60)
+  let total_sec_duration = Math.floor(audioElement.duration % 60)
+
+  total_sec_duration =
+    total_sec_duration < 10 ? `0${total_sec_duration}` : total_sec_duration
+
+  if (total_min_duration && total_sec_duration) {
+    total_time.innerText = `${total_min_duration}:${total_sec_duration}`
+  }
+
   if (audioElement.ended) {
     masterPlay.classList.remove('fa-pause-circle')
     masterPlay.classList.add('fa-play-circle')
