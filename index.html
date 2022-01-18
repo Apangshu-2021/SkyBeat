@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      SkyBeat | A music app which contains some of my favourite songs songs
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 784px)"
+      href="phone.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="brand"><img src="logo.png" alt="Spotify" />SkyBeat</li>
+        <div id="navbar_icons">
+          <li>Home</li>
+          <li>About</li>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="songList">
+        <h1>Top 10 songs of my playlist</h1>
+        <div class="songItemContainer">
+          <div class="songItem">
+            <img src="covers/1.jpeg" alt="1" />
+            <span class="songName">Meant to live-Switchfoot</span>
+            <div class="songlistplay">
+              5:54<i id="1" class="far songItemPlay fa-play-circle"></i>
+            </div>
+          </div>
+          <div class="songItem">
+            <img src="covers/1.jpeg" alt="2" />
+            <span class="songName">Numb-Linkin Park</span>
+            <div class="songlistplay">
+              5:54<i id="2" class="far songItemPlay fa-play-circle"></i>
+            </div>
+          </div>
+          <div class="songItem">
+            <img src="covers/1.jpeg" alt="3" />
+            <span class="songName">In the End-Linkin Park</span>
+            <div class="songlistplay">
+              5:54<i id="3" class="far songItemPlay fa-play-circle"></i>
+            </div>
+          </div>
+          <div class="songItem">
+            <img src="covers/1.jpeg" alt="4" />
+            <span class="songName">New Divide-Linkin Park</span>
+            <div class="songlistplay">
+              5:54<i id="4" class="far songItemPlay fa-play-circle"></i>
+            </div>
+          </div>
+          <div class="songItem">
+            <img src="covers/1.jpeg" alt="5" />
+            <span class="songName">Burn It Down-Linkin Park</span>
+            <div class="songlistplay">
+              5:54<i id="5" class="far songItemPlay fa-play-circle"></i>
+            </div>
+          </div>
+          <div class="songItem">
+            <img src="covers/1.jpeg" alt="6" />
+            <span class="songName">Leave Out All The Rest-Linkin Park</span>
+            <div class="songlistplay">
+              5:54<i id="6" class="far songItemPlay fa-play-circle"></i>
+            </div>
+          </div>
+          <div class="songItem">
+            <img src="covers/1.jpeg" alt="7" />
+            <span class="songName">Easier To Run-Linkin Park</span>
+            <div class="songlistplay">
+              5:54<i id="7" class="far songItemPlay fa-play-circle"></i>
+            </div>
+          </div>
+          <div class="songItem">
+            <img src="covers/1.jpeg" alt="8" />
+            <span class="songName">Hall Of Fame-Will.I.Am,The Script</span>
+            <div class="songlistplay">
+              5:54<i id="8" class="far songItemPlay fa-play-circle"></i>
+            </div>
+          </div>
+          <div class="songItem">
+            <img src="covers/1.jpeg" alt="9" />
+            <span class="songName">Centuries-Fall Out Boy</span>
+            <div class="songlistplay">
+              5:54<i id="9" class="far songItemPlay fa-play-circle"></i>
+            </div>
+          </div>
+          <div class="songItem">
+            <img src="covers/1.jpeg" alt="10" />
+            <span class="songName">Fireflies-Owl City</span>
+            <div class="songlistplay">
+              5:54<i id="10" class="far songItemPlay fa-play-circle"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+      <input
+        type="range"
+        name="range"
+        id="myProgressBar"
+        value="0"
+        min="{0}"
+        max="{100}"
+      />
+      <div class="songInfo">
+        <img src="playing.gif" width="42px" alt="" id="gif" />
+        <span id="masterSongName">Meant To Live-Switchfoot</span>
+      </div>
+      <div class="icons">
+        <!-- fontawesome icons -->
+        <i class="fas fa-2x fa-step-backward" id="previous"></i>
+        <i class="far fa-2x fa-play-circle" id="masterPlay"></i>
+        <i class="fas fa-2x fa-step-forward" id="next"></i>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5d0575aa6e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+nav ul div{
+    margin-top: 2px;
+}
+
+.brand{
+    margin-top: 3px;
+}
+
+.songItem{
+    font-size: 0.8rem;
+}
+
+.songlistplay{
+    padding-right: 4px;
+    margin-left: 2px;
+}
+
+.songInfo{
+    font-size: 0.8rem;
+    text-align: center;
+ }
