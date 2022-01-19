@@ -1,27 +1,32 @@
 nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items:center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-nav ul div{
-    margin-top: 2px;
+nav ul div {
+  margin-top: 2px;
 }
 
-.brand{
-    margin-top: 3px;
+.brand {
+  margin-top: 3px;
 }
 
-.songItem{
-    font-size: 0.8rem;
+.songItem {
+  font-size: 0.8rem;
 }
 
-.songlistplay{
-    padding-right: 4px;
-    margin-left: 2px;
+.songlistplay {
+  padding-right: 4px;
+  margin-left: 2px;
 }
 
-.songInfo{
-    font-size: 0.8rem;
-    text-align: center;
- }
+.songInfo {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.footer {
+  font-size: 0.6rem;
+  text-align: center;
+}
